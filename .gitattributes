@@ -1,0 +1,3 @@
+*.gd          linguist-detectable=true
+*.gdscript    linguist-detectable=true
+*.gdshader    linguist-detectable=true
