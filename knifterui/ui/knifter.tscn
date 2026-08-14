@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://b1bxxabck23pa"]
+
+[ext_resource type="Script" uid="uid://bxxivp5iyhtev" path="res://addons/knifterui/scripts/knifter.gd" id="1_721go"]
+
+[node name="Knifter" type="PanelContainer" unique_id=1003808786]
+custom_minimum_size = Vector2(0, 420)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_721go")
+
+[node name="DetailsPage" type="MarginContainer" parent="." unique_id=5992244]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = -2
+theme_override_constants/margin_top = 70
+theme_override_constants/margin_right = -2
+theme_override_constants/margin_bottom = -2
+
+[node name="LogBox" type="RichTextLabel" parent="DetailsPage" unique_id=1045698057]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Engine name: Knifter Engine
+Engine Version: v1.0
+Based on: Godot Engine v4.6.1
+Supporting modules:
+- KnifterCore v1.0
+- KnifterUI v1.0
+- HumPla Engine v1.0
+- Gammada v1.0
+- RenderFlack v1.0"
+selection_enabled = true
+
+[node name="BrowserPage" type="MarginContainer" parent="." unique_id=320594992]
+layout_mode = 2
+theme_override_constants/margin_left = -2
+theme_override_constants/margin_top = 70
+theme_override_constants/margin_right = -2
+theme_override_constants/margin_bottom = -2
+
+[node name="HTTPRequest" type="HTTPRequest" parent="BrowserPage" unique_id=1128201498]
+
+[node name="WebsiteBox" type="RichTextLabel" parent="BrowserPage" unique_id=887342422]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+selection_enabled = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=113129365]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="DetailsButton" type="Button" parent="HBoxContainer" unique_id=1344220453]
+layout_mode = 2
+text = "Details"
+
+[node name="BrowserButton" type="Button" parent="HBoxContainer" unique_id=701007060]
+layout_mode = 2
+text = "Browser"
+
+[node name="PreviewButton" type="Button" parent="HBoxContainer" unique_id=170607755]
+layout_mode = 2
+text = "Preview"
